@@ -22,6 +22,12 @@
                    displayName="Test Files"
                    projectFiles="false"
                    kind="TEST_LOGICAL_FOLDER">
+      <logicalFolder name="f1"
+                     displayName="palinTest"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/newsimpletest.c</itemPath>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -40,6 +46,21 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+        </linkerTool>
+      </folder>
       <item path="input_arreglo.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="input_arreglo.h" ex="false" tool="3" flavor2="0">
@@ -49,6 +70,8 @@
       <item path="palin.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="palin.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/newsimpletest.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -71,6 +94,21 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+        </linkerTool>
+      </folder>
       <item path="input_arreglo.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="input_arreglo.h" ex="false" tool="3" flavor2="0">
@@ -80,6 +118,8 @@
       <item path="palin.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="palin.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/newsimpletest.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>
