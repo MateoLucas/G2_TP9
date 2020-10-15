@@ -18,12 +18,12 @@
  * Simple C Test Suite
  */
 
-void testPalin(int esperado, int llamado)
+void testPalin(int esperado, int llamado)//testPalin(TRUE,palin())->ejemplo de como se usa
 {
-    static int n=0;
+    static int n=0;//para saber que numero de test es
     n++;
     printf("newsimpletest test 1\n");
-    if(llamado==esperado)
+    if(llamado==esperado)//comparacion
         printf(SUCCESS_MESSAGE);
     else
         printf("%%TEST_FAILED%% time=0 testname=puerto_correcto_%d (test_bitGet)\n", n);
