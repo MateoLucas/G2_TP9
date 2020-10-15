@@ -13,7 +13,8 @@
 
 
 #include <stdlib.h>
-#include"input_arreglo.h"
+#include "input_arreglo.h"
+#include "palin.h"
 
 /*
  * 

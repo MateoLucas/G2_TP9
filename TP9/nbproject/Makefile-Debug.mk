@@ -35,9 +35,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/_ext/5d8126cf/input_arreglo.o \
-	${OBJECTDIR}/_ext/5d8126cf/main.o \
-	${OBJECTDIR}/_ext/5d8126cf/palin.o
+	${OBJECTDIR}/input_arreglo.o \
+	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/palin.o
 
 
 # C Compiler Flags
@@ -64,20 +64,20 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/tp9: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/tp9 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/_ext/5d8126cf/input_arreglo.o: ../../../../input_arreglo.c
-	${MKDIR} -p ${OBJECTDIR}/_ext/5d8126cf
+${OBJECTDIR}/input_arreglo.o: input_arreglo.c
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/5d8126cf/input_arreglo.o ../../../../input_arreglo.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/input_arreglo.o input_arreglo.c
 
-${OBJECTDIR}/_ext/5d8126cf/main.o: ../../../../main.c
-	${MKDIR} -p ${OBJECTDIR}/_ext/5d8126cf
+${OBJECTDIR}/main.o: main.c
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/5d8126cf/main.o ../../../../main.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
 
-${OBJECTDIR}/_ext/5d8126cf/palin.o: ../../../../palin.c
-	${MKDIR} -p ${OBJECTDIR}/_ext/5d8126cf
+${OBJECTDIR}/palin.o: palin.c
+	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/5d8126cf/palin.o ../../../../palin.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/palin.o palin.c
 
 # Subprojects
 .build-subprojects:

@@ -42,7 +42,20 @@
 #     CND_PACKAGE_PATH_${CONF}   path to package (current configuration)
 #
 # NOCDDL
+TP9: main.o input_arreglo.o palin.o
+		gcc main.o input_arreglo.o palin.o -o TP9 -Wall -g
+main.o: main.c 
+		gcc -c main.c -Wall
 
+input_arreglo.o:input_arreglo.c
+		 gcc -c input_arreglo.c -Wall
+
+palin.o:palin.c
+		gcc -c palin.c -Wall
+
+
+clean: 
+		rn *.o
 
 # Environment 
 MKDIR=mkdir
